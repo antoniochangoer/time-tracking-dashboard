@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --clr-dark: #0e1323;
+  --clr-dbp: #1c204b;
+  --clr-p: #7078c9;
+  --clr-dp: #5747ea;
+  --clr-o: #ff8b64;
+  --clr-do: #d96c47;
+  --clr-b: #55c2e6;
+  --clr-db: #3f9cbb;
+  --clr-r: #ff5e7d;
+  --clr-dr: #f04667;
+  --clr-lp: #bbc0ff;
+  --clr-g: #4bcf82;
+  --clr-dg: #29ba66;
+  --clr-dp: #7335d2;
+  --clr-edp: #5a1cbb;
+  --clr-ly: #f1c75b;
+  --clr-dy: #e6a532;
+  --clr-white: #ffffff;
+
+  --f: 'Rubik', sans-serif;
+  --fw-l: 300;
+  --fw-r: 400;
+  --fw-m: 500;
+  --f-xl: 5.6rem;
+  --f-l: 4rem;
+  --f-m: 3.2rem;
+  --f-s: 2.4rem;
+  --f-xs: 1.8rem;
+  --f-sub: 1.5rem;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* General styling */
+body {
+  color: var(--clr-white);
+  font-family: var(--f);
+  font-size: var(--f-xs);
+  background-color: var(--clr-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utility classes */
+.container {
+  padding: 8rem 2.4rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h1 {
+  font-weight: var(--f-l);
+  font-size: var(--f-s);
+}
+
+.h2 {
+  font-weight: var(--f-l);
+  font-size: var(--f-m);
+}
+
+.p {
+  font-size: var(--f-xs);
+}
+
+.small {
+  font-weight: var(--fw-r);
+  font-size: var(--f-xs);
+}
+
+.sub {
+  font-weight: var(--fw-r);
+  font-size: var(--f-sub);
+}
+
+.sub-clr-light {
+  color: var(--clr-lp);
+}
+
+.sub-clr-dark {
+  color: var(--clr-p);
+}
+
+@media (min-width: 1000px) {
+  .h1 {
+    font-size: var(--f-l);
+  }
+
+  .h2 {
+    font-size: var(--f-xl);
+  }
+}
+
+/* Styling */
+.dashboard {
+  display: grid;
+  gap: 2.4rem;
+  /* grid-auto-columns: 1fr; */
+  grid-template-areas:
+    'tile-main'
+    'tile-work'
+    'tile-play'
+    'tile-study'
+    'tile-exercise'
+    'tile-social'
+    'tile-selfcare';
+}
+
+.dashboard__profile-picture {
+  max-width: 6.4rem;
+}
+
+.dashboard__profile-info {
+}
+
+.dashboard__stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3.5rem;
+  transition: all 0.5s ease-in;
+}
+
+.dashboard__stat:hover {
+  color: var(--clr-white);
+}
+
+.active {
+  color: var(--clr-white);
+}
+
+.dashboard__stat {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--clr-dbp);
+}
+
+.dashboard__tile {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  /* extra on bottom so background img doesnt show */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: var(--clr-dbp);
+}
+
+.dashboard__tile-content {
+  border-radius: 15px;
+  padding: 2.8rem 2.4rem;
+  background-color: var(--clr-dbp);
+}
+
+.dashboard__category {
+  font-weight: var(--fw-m);
+}
+
+.tile--bg {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.5rem 2rem;
+  border-radius: 15px;
+  background-color: var(--clr-dp);
+}
+
+.tile--main {
+  grid-area: tile-main;
+}
+
+.tile--work {
+  grid-area: tile-work;
+  padding-top: 3.8rem;
+  background: url('../images/icon-work.svg') no-repeat top right var(--clr-o);
+}
+
+.tile--play {
+  grid-area: tile-play;
+  padding-top: 3.8rem;
+  background: url('../images/icon-play.svg') no-repeat top right var(--clr-b);
+}
+
+.tile--study {
+  grid-area: tile-study;
+  padding-top: 3.8rem;
+  background: url('../images/icon-study.svg') no-repeat top right var(--clr-r);
+}
+
+.tile--exercise {
+  grid-area: tile-exercise;
+  padding-top: 3.8rem;
+  background: url('../images/icon-exercise.svg') no-repeat top right
+    var(--clr-g);
+}
+
+.tile--social {
+  grid-area: tile-social;
+  padding-top: 3.8rem;
+  background: url('../images/icon-social.svg') no-repeat top right var(--clr-dp);
+}
+
+.tile--selfcare {
+  grid-area: tile-selfcare;
+  padding-top: 3.8rem;
+  background: url('../images/icon-self-care.svg') no-repeat top right
+    var(--clr-ly);
+}
+
+@media (min-width: 90em) {
+  main {
+  }
+
+  .tile--bg {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .dashboard {
+    grid-template-areas:
+      'tile-main tile-work tile-play tile-study'
+      'tile-main tile-exercise tile-social tile-selfcare';
+  }
+
+  .dashboard__stats {
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
