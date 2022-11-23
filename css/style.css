@@ -286,4 +286,9 @@ a {
     justify-content: space-around;
     flex-direction: column;
   }
+
+  .row + .row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

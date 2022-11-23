@@ -27,11 +27,10 @@ function renderDashboard(data, stat) {
                   />
                   </div>
                   <div class="row">
-                  <h2 class="h2" data-current>${
-                    data.timeframes[stat].current
-                  }</h2>
-                  <span class="sub sub-clr-light" data-previous
-                      >Last Week - ${data.timeframes[stat].previous}hrs</span
+                  <h2 class="h2">${data.timeframes[stat].current}hrs</h2>
+                  <span class="sub sub-clr-light">Last Week - ${
+                    data.timeframes[stat].previous
+                  }hrs</span
                   >
                   </div>
               </div>
