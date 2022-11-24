@@ -269,7 +269,7 @@ a {
 
 @media (min-width: 43em) {
   main {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
   }
