@@ -109,12 +109,12 @@ a {
 }
 
 .h1 {
-  font-weight: var(--f-l);
+  font-weight: var(--fw-l);
   font-size: var(--f-s);
 }
 
 .h2 {
-  font-weight: var(--f-l);
+  font-weight: var(--fw-l);
   font-size: var(--f-m);
 }
 
