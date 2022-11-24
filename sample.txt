@@ -75,3 +75,105 @@
     <!-- monthly -->
     Previous - 11hrs
     <!-- monthly -->
+
+
+
+
+              <!-- <div class="dashboard__tile tile--work">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2" data-current>32hrs</h2>
+                <span class="sub sub-clr-light" data-previous
+                  >Last Week - 36hrs</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__tile tile--play">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Play</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2">10hrs</h2>
+                <span class="sub sub-clr-light">Last Week - 36hrs</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__tile tile--study">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Study</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2">4hrs</h2>
+                <span class="sub sub-clr-light">Last Week - 7hrs</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__tile tile--exercise">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Exercise</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2">4hrs</h2>
+                <span class="sub sub-clr-light">Last Week - 5hrs</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__tile tile--social">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Social</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2">5hrs</h2>
+                <span class="sub sub-clr-light">Last Week - 10hrs</span>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__tile tile--self-care">
+            <div class="dashboard__tile-content">
+              <div class="row">
+                <p class="dashboard__category">Self Care</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  alt="three dots"
+                  class="dashboard__elipses"
+                />
+              </div>
+              <div class="row">
+                <h2 class="h2">2hrs</h2>
+                <span class="sub sub-clr-light">Last Week - 2hrs</span>
+              </div>
+            </div>
+          </div> -->
