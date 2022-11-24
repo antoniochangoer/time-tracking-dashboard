@@ -56,5 +56,5 @@ buttons.forEach((btn) => {
 
 // On window load fire initial call to load dom otherwise it would only have one tile
 window.onload = () => {
-  document.querySelector('[data-stat="daily"]').click();
+  document.querySelector('[data-stat="monthly"]').click();
 };

@@ -4,7 +4,7 @@
   --clr-dark: #0e1323;
   --clr-dbp: #1c204b;
   --clr-p: #7078c9;
-  --clr-dp: #5747ea;
+  --clr-bp: #5747ea;
   --clr-o: #ff8b64;
   --clr-do: #d96c47;
   --clr-b: #55c2e6;
@@ -97,6 +97,8 @@ a {
 
 /* utility classes */
 .container {
+  max-width: min(90%, 111rem);
+  margin-inline: auto;
   padding: 8rem 2.4rem;
 }
 
@@ -152,7 +154,7 @@ a {
 .dashboard {
   display: grid;
   gap: 2.4rem;
-  /* grid-auto-columns: 1fr; */
+  grid-auto-columns: 1fr;
   grid-template-areas:
     'tile-main'
     'tile-work'
@@ -165,6 +167,8 @@ a {
 
 .dashboard__profile-picture {
   max-width: 6.4rem;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 .dashboard__profile-info {
@@ -218,7 +222,7 @@ a {
   gap: 2rem;
   padding: 3.5rem 2rem;
   border-radius: 15px;
-  background-color: var(--clr-dp);
+  background-color: var(--clr-bp);
 }
 
 .tile--main {
@@ -263,16 +267,36 @@ a {
     var(--clr-ly);
 }
 
-@media (min-width: 90em) {
+@media (min-width: 43em) {
   main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    flex: 1;
+  }
+  .dashboard {
+    grid-template-areas:
+      'tile-main tile-main'
+      'tile-work tile-play'
+      'tile-study tile-exercise'
+      'tile-social tile-selfcare';
+  }
+}
+
+@media (min-width: 75em) {
+  .h1 span {
+    display: block;
   }
 
   .tile--bg {
-    height: 75%;
+    height: 71%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    gap: 4rem;
   }
 
   .dashboard {
@@ -281,10 +305,26 @@ a {
       'tile-main tile-exercise tile-social tile-selfcare';
   }
 
+  .dashboard__profile-picture {
+    max-width: 7.8rem;
+  }
+
   .dashboard__stats {
     align-items: flex-start;
-    justify-content: space-around;
+    gap: 1rem;
     flex-direction: column;
+  }
+
+  .dashboard__tile-content {
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+  .dashboard__tile-content:hover {
+    background-color: #33397a;
+  }
+
+  .dashboard__elipses:hover {
+    filter: grayscale(100%) brightness(200%) saturate(0%) contrast(1000%);
   }
 
   .row + .row {
